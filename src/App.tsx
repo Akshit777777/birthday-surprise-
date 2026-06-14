@@ -778,7 +778,6 @@ const PhotoSlot: React.FC<{
     src="/photos/hero.png"
     alt="Sister hero photo"
     label="Hero Photo"
-    note="Place your main photo at public/photos/hero.png"
     variant="kitty"
     className="h-full"
   />
@@ -1529,7 +1528,7 @@ const PhotoSlot: React.FC<{
                     <HelloKittyBow className="w-8 h-7" />
                   </div>
                   <div className="h-4" />
-                  <PhotoSlot src="/photos/gallery-1.png" alt="Sister laughing in nature" label="Gallery 01" note="Put this image at public/photos/gallery-1.jpg" variant="kitty" className="group" />
+                  <PhotoSlot src="/photos/gallery-1.png" alt="Sister laughing in nature" label="Gallery 01"  />
                   <p className="font-cute text-[11px] text-slate-400 mt-3 text-center">📷 Cozy Flower snapshot</p>
                 </div>
 
@@ -1538,7 +1537,7 @@ const PhotoSlot: React.FC<{
                     <HelloKittyBow className="w-8 h-7" />
                   </div>
                   <div className="h-4" />
-                  <PhotoSlot src="/photos/gallery-2.png" alt="Fun selfie or photo booth moment" label="Gallery 02" note="Put this image at public/photos/gallery-2.jpg" variant="heart" className="group" />
+                  <PhotoSlot src="/photos/gallery-2.png" alt="Fun selfie or photo booth moment" label="Gallery 02"  variant="heart" className="group" />
                   <p className="font-cute text-[11px] text-slate-400 mt-3 text-center">📷 Silly Selfie frame</p>
                 </div>
 
@@ -1547,7 +1546,7 @@ const PhotoSlot: React.FC<{
                     <HelloKittyBow className="w-8 h-7" />
                   </div>
                   <div className="h-4" />
-                  <PhotoSlot src="/photos/gallery-3.png" alt="Coffee or casual moment" label="Gallery 03" note="Put this image at public/photos/gallery-3.jpg" variant="kitty" className="group" />
+                  <PhotoSlot src="/photos/gallery-3.png" alt="Coffee or casual moment" label="Gallery 03"  variant="kitty" className="group" />
                   <p className="font-cute text-[11px] text-slate-400 mt-3 text-center">📷 Coffee Escalation moment</p>
                 </div>
 
@@ -1556,7 +1555,7 @@ const PhotoSlot: React.FC<{
                     <HelloKittyBow className="w-8 h-7" />
                   </div>
                   <div className="h-4" />
-                  <PhotoSlot src="/photos/gallery-4.png" alt="Celebration or family graduation photo" label="Gallery 04" note="Put this image at public/photos/gallery-4.jpg" variant="heart" className="group" />
+                  <PhotoSlot src="/photos/gallery-4.png" alt="Celebration or family graduation photo" label="Gallery 04"  variant="heart" className="group" />
                   <p className="font-cute text-[11px] text-slate-400 mt-3 text-center">📷 Landmark Milestone memories</p>
                 </div>
 
