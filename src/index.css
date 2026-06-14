@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:wght@100..900&family=Pacifico&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-cursive: "Pacifico", cursive;
+  --font-rounded: "Fredoka", sans-serif;
+}
+
+/* Custom background styles & sparkles */
+body {
+  font-family: var(--font-sans);
+  background-color: #fff5f7;
+  color: #4a3e43;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #ffb3c6 #fff5f7;
+}
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fff5f7;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ffb3c6;
+  border-radius: 9999px;
+  border: 2px solid #fff5f7;
+}
+
+/* Sparkle Animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+    filter: drop-shadow(0 0 4px rgba(255, 105, 180, 0.4));
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+    filter: drop-shadow(0 0 12px rgba(255, 105, 180, 0.8));
+  }
+}
+
+.animate-pulseGlow {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+@keyframes floatSoft {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(3deg);
+  }
+}
+
+.animate-floatSoft {
+  animation: floatSoft 4s infinite ease-in-out;
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-12px) translateX(6px) rotate(1.5deg);
+  }
+  66% {
+    transform: translateY(-4px) translateX(-6px) rotate(-1.5deg);
+  }
+}
+
+.animate-floatSlow {
+  animation: floatSlow 8s infinite ease-in-out;
+}
+
+/* Custom custom styles for active trails and elements */
+.bow-shadow {
+  filter: drop-shadow(0 4px 6px rgba(255, 105, 180, 0.25));
+}
+
+.kitty-glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 2px solid rgba(255, 179, 198, 0.4);
+}
+
+.kitty-glass-pink {
+  background: rgba(255, 240, 243, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 2px solid rgba(255, 143, 171, 0.5);
+}
+
+.candy-gradient {
+  background: linear-gradient(135deg, #ffe5ec 0%, #ffc2d1 50%, #ffb3c6 100%);
+}
+
+.font-fancy {
+  font-family: var(--font-cursive);
+}
+
+.font-cute {
+  font-family: var(--font-rounded);
+}
+
+/* Keyboard/focus aesthetics */
+*:focus-visible {
+  outline: 3px solid #ff7096;
+  outline-offset: 2px;
+}
+

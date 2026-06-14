@@ -1,0 +1,6 @@
+{
+  "name": "Sister Birthday Website",
+  "description": "An elegant, magical, and interactive Hello Kitty themed birthday celebration website for my sister.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
